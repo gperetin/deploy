@@ -1,0 +1,11 @@
+[Unit]
+Description=Demo service used in testing of the deploy tool
+
+[Service]
+WorkingDirectory=/tmp/apps/demo_service
+ExecStart=/tmp/apps/demo_service/.venv/bin/uvicorn demo_service:app --host 0.0.0.0 --port 8085
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
