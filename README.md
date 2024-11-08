@@ -13,9 +13,9 @@ This tool uses [Inline script metadata](https://packaging.python.org/en/latest/s
 
     uv run deploy.py
 
-Or, without checking out the repo:
+Or, without checking out the repo, with `uv>=0.4.21`:
 
-    curl -LsSf https://raw.githubusercontent.com/gperetin/deploy/refs/heads/main/deploy.py | uv run -
+    uv run https://raw.githubusercontent.com/gperetin/deploy/refs/heads/main/deploy.py
 
 ## Configuration
 
